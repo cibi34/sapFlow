@@ -9,9 +9,8 @@
       <field name="FADE_ANNOTATIONS">TRUE</field>
     </block>
   </tab>
-  <tab name="main" type="CommonTab" active="true" scrollx="113.59794265952769" scrolly="546.5056704740398" scale="0.5790017154125014">
+  <tab name="main" type="CommonTab" active="true" scrollx="-42.62318308279646" scrolly="1002.216285157956" scale="0.6768393620286874">
     <variables xmlns="https://developers.google.com/blockly/xml">
-      <variable id="8jL*8#$5A?#c+DlC{]T}">sensorValue</variable>
       <variable id="F+0[1ev?v*Y|jMeXN;6;">graph_visible</variable>
       <variable id="ym+n_?raF*Z7m)m[=EJT">graph_url</variable>
       <variable id=")wrNg_VOfM`oTBUqs5XD">timeCurrent</variable>
@@ -607,19 +606,14 @@
             </shadow>
           </value>
           <statement name="DO">
-            <block type="procedures_callnoreturn" id="=:!9FB/W%l:w(7twVxUx">
-              <mutation name="getSensorValue"></mutation>
+            <block type="procedures_callnoreturn" id="sq;j|u^g(9ShM1.EuC=D">
+              <mutation name="updateGraph"></mutation>
               <next>
-                <block type="procedures_callnoreturn" id="sq;j|u^g(9ShM1.EuC=D">
-                  <mutation name="updateGraph"></mutation>
+                <block type="procedures_callnoreturn" id="q%p,5m$0X:^pJ$]z(k{=">
+                  <mutation name="updateSunTimes"></mutation>
                   <next>
-                    <block type="procedures_callnoreturn" id="q%p,5m$0X:^pJ$]z(k{=">
-                      <mutation name="updateSunTimes"></mutation>
-                      <next>
-                        <block type="procedures_callnoreturn" id="Sg[lM8iyIpmygtMa|)p}">
-                          <mutation name="checkTimes"></mutation>
-                        </block>
-                      </next>
+                    <block type="procedures_callnoreturn" id="Sg[lM8iyIpmygtMa|)p}">
+                      <mutation name="checkTimes"></mutation>
                     </block>
                   </next>
                 </block>
@@ -702,20 +696,6 @@
               </statement>
             </block>
           </statement>
-        </block>
-      </statement>
-    </block>
-    <block xmlns="https://developers.google.com/blockly/xml" type="procedures_defnoreturn" id="WG?@3OMItzU7ocmu;).-" x="210" y="250">
-      <field name="NAME">getSensorValue</field>
-      <comment pinned="false" h="80" w="160">Describe this function...</comment>
-      <statement name="STACK">
-        <block type="variables_set" id="dgz~k]%ES0E2^S[e6OfL">
-          <field name="VAR" id="8jL*8#$5A?#c+DlC{]T}">sensorValue</field>
-          <value name="VALUE">
-            <block type="math_number" id="@Uu|faoD)DqXG)92S~A*">
-              <field name="NUM">0.8</field>
-            </block>
-          </value>
         </block>
       </statement>
     </block>

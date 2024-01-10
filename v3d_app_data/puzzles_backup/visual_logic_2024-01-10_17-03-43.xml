@@ -9,7 +9,7 @@
       <field name="FADE_ANNOTATIONS">TRUE</field>
     </block>
   </tab>
-  <tab name="main" type="CommonTab" active="true" scrollx="113.59794265952769" scrolly="546.5056704740398" scale="0.5790017154125014">
+  <tab name="main" type="CommonTab" active="true" scrollx="-7.161141578611819" scrolly="614.6394310434985" scale="0.731793396056328">
     <variables xmlns="https://developers.google.com/blockly/xml">
       <variable id="8jL*8#$5A?#c+DlC{]T}">sensorValue</variable>
       <variable id="F+0[1ev?v*Y|jMeXN;6;">graph_visible</variable>
@@ -713,7 +713,7 @@
           <field name="VAR" id="8jL*8#$5A?#c+DlC{]T}">sensorValue</field>
           <value name="VALUE">
             <block type="math_number" id="@Uu|faoD)DqXG)92S~A*">
-              <field name="NUM">0.8</field>
+              <field name="NUM">0</field>
             </block>
           </value>
         </block>
