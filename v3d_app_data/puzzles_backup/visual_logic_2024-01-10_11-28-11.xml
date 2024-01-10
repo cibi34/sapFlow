@@ -9,7 +9,7 @@
       <field name="FADE_ANNOTATIONS">TRUE</field>
     </block>
   </tab>
-  <tab name="main" type="CommonTab" active="true" scrollx="49.47972106933594" scrolly="-106.31481170654297" scale="1">
+  <tab name="main" type="CommonTab" active="true" scrollx="-6.831604003905795" scrolly="-145.35182189941384" scale="1">
     <variables xmlns="https://developers.google.com/blockly/xml">
       <variable id=".:mvsOpbqA_(SOra?n1a">particles</variable>
       <variable id="GM#AVhIkxaTe3k3qV=hf">animSpeed</variable>
@@ -90,7 +90,24 @@
         </block>
       </next>
     </block>
-    <block xmlns="https://developers.google.com/blockly/xml" type="addHTMLElement" id="XrR=0,.#d]c!|A}xF4%;" x="830" y="210">
+    <block xmlns="https://developers.google.com/blockly/xml" type="comment" id="o%.)5l^+V)AbR}0%=bRu" x="10" y="370">
+      <field name="TEXT">set graph refresh time in seconds</field>
+      <next>
+        <block type="setInterval" id=";gp+#K!,4rm{I4wsLvX;">
+          <value name="VALUE">
+            <shadow type="math_number" id="HV+oUEb-U7AHSs-H+j+a">
+              <field name="NUM">60</field>
+            </shadow>
+          </value>
+          <statement name="DO">
+            <block type="procedures_callnoreturn" id="sq;j|u^g(9ShM1.EuC=D">
+              <mutation name="updateImage"></mutation>
+            </block>
+          </statement>
+        </block>
+      </next>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="addHTMLElement" id="XrR=0,.#d]c!|A}xF4%;" x="830" y="350">
       <field name="ELEMENT">input</field>
       <field name="MODE">TO</field>
       <field name="PARENT">FALSE</field>
@@ -138,7 +155,7 @@
                   <field name="PARENT">FALSE</field>
                   <value name="VALUE">
                     <shadow type="math_number" id="2Q1cbTokT^b9UKZTl_s9">
-                      <field name="NUM">5</field>
+                      <field name="NUM">3</field>
                     </shadow>
                   </value>
                   <value name="ID">
@@ -146,59 +163,10 @@
                       <field name="TEXT">ani-speed</field>
                     </shadow>
                   </value>
-                  <next>
-                    <block type="setHTMLElemAttribute" id="03CQoM$idUtL#VAsrL$]">
-                      <field name="ATTRIBUTE">value</field>
-                      <field name="PARENT">FALSE</field>
-                      <value name="VALUE">
-                        <shadow type="text" id="1r0RHUI/YI?u-_cY.bV-">
-                          <field name="TEXT">1</field>
-                        </shadow>
-                      </value>
-                      <value name="ID">
-                        <shadow type="text" id="*Neh8O6[imG|dqV/%e7C">
-                          <field name="TEXT">ani-speed</field>
-                        </shadow>
-                      </value>
-                      <next>
-                        <block type="setHTMLElemAttribute" id="D]`ts3g{g*%!yMgc$uLz">
-                          <field name="ATTRIBUTE">step</field>
-                          <field name="PARENT">FALSE</field>
-                          <value name="VALUE">
-                            <shadow type="math_number" id="5#!Y[YL|K]QtM4(Sn=Eu">
-                              <field name="NUM">0.1</field>
-                            </shadow>
-                          </value>
-                          <value name="ID">
-                            <shadow type="text" id="yEr*A1$Gq|}fxl#=I_ez">
-                              <field name="TEXT">ani-speed</field>
-                            </shadow>
-                          </value>
-                        </block>
-                      </next>
-                    </block>
-                  </next>
                 </block>
               </next>
             </block>
           </next>
-        </block>
-      </next>
-    </block>
-    <block xmlns="https://developers.google.com/blockly/xml" type="comment" id="o%.)5l^+V)AbR}0%=bRu" x="10" y="370">
-      <field name="TEXT">set graph refresh time in seconds</field>
-      <next>
-        <block type="setInterval" id=";gp+#K!,4rm{I4wsLvX;">
-          <value name="VALUE">
-            <shadow type="math_number" id="HV+oUEb-U7AHSs-H+j+a">
-              <field name="NUM">60</field>
-            </shadow>
-          </value>
-          <statement name="DO">
-            <block type="procedures_callnoreturn" id="sq;j|u^g(9ShM1.EuC=D">
-              <mutation name="updateImage"></mutation>
-            </block>
-          </statement>
         </block>
       </next>
     </block>
@@ -297,62 +265,57 @@
                   </next>
                 </block>
               </statement>
-            </block>
-          </next>
-        </block>
-      </statement>
-    </block>
-    <block xmlns="https://developers.google.com/blockly/xml" type="eventHTMLElem" id="}1F^(%*6-wDtwnq_0^!;" x="830" y="490">
-      <field name="EVENT">input</field>
-      <field name="PARENT">FALSE</field>
-      <value name="ID">
-        <shadow type="text" id=")*dN;Q`^@?m0z!I1_L.4">
-          <field name="TEXT">ani-speed</field>
-        </shadow>
-      </value>
-      <statement name="DO">
-        <block type="variables_set" id="2%1cwI*({~FAg3yn+RUk">
-          <field name="VAR" id="GM#AVhIkxaTe3k3qV=hf">animSpeed</field>
-          <value name="VALUE">
-            <block type="getHTMLElemAttribute" id="7MwM%j}Alkf@,|[PsWhe">
-              <field name="ATTRIBUTE">value</field>
-              <field name="PARENT">FALSE</field>
-              <value name="ID">
-                <shadow type="text" id="my?qbXq~PGn5=qGC;Hsr">
-                  <field name="TEXT">ani-speed</field>
-                </shadow>
-              </value>
-            </block>
-          </value>
-          <next>
-            <block type="console.log" id="Za0L)Q|]4P?0^jg4@-;c">
-              <value name="VALUE">
-                <shadow type="text" id="gNG7r_Q^HkkiNz7m[kA^">
-                  <field name="TEXT">Hello, Verge!</field>
-                </shadow>
-                <block type="variables_get" id="+(nukd4ht7ZzrK*,dSD$">
-                  <field name="VAR" id="GM#AVhIkxaTe3k3qV=hf">animSpeed</field>
-                </block>
-              </value>
               <next>
-                <block type="setAnimationSpeed" id="t7-|=I0S6d9o6`o^CjL6">
-                  <field name="REVERSED">FALSE</field>
-                  <value name="VALUE">
-                    <shadow type="animationList" id="BcN?$BQ2r$1LI|x,ygSB">
-                      <field name="FIELDNAME">&lt;none&gt;</field>
-                    </shadow>
-                    <block type="variables_get" id="@Q=JSPtyy{O8G#e`.74}">
-                      <field name="VAR" id=".:mvsOpbqA_(SOra?n1a">particles</field>
+                <block type="connectorSlot" id="u0F+S`7c?G:sl#bdktwG">
+                  <statement name="DO">
+                    <block type="addHTMLElement" id="V2(wl/pW-fJU_zw{]fg+">
+                      <field name="ELEMENT">button</field>
+                      <field name="MODE">TO</field>
+                      <field name="PARENT">FALSE</field>
+                      <value name="ID">
+                        <shadow type="text" id="wt{u)D+sM%q,75Frbpa-">
+                          <field name="TEXT">btn2</field>
+                        </shadow>
+                      </value>
+                      <value name="TARGET_ID">
+                        <shadow type="DOMObjectSelector" id="Ai|AJ5%:P,3URR[`4Hl(">
+                          <field name="DOM_OBJECT">CONTAINER</field>
+                        </shadow>
+                      </value>
+                      <next>
+                        <block type="setHTMLElemAttribute" id="-Fv^Kr4k7kScgN|bdR-Z">
+                          <field name="ATTRIBUTE">className</field>
+                          <field name="PARENT">FALSE</field>
+                          <value name="VALUE">
+                            <shadow type="text" id="IAi;l,Fd7i%IT]wE%!Z%">
+                              <field name="TEXT">button</field>
+                            </shadow>
+                          </value>
+                          <value name="ID">
+                            <shadow type="text" id="/L2XEfFpBVS#2-6-GjrN">
+                              <field name="TEXT">btn2</field>
+                            </shadow>
+                          </value>
+                          <next>
+                            <block type="setHTMLElemAttribute" id="1}mmN)Vmr:JXij?T$.e/">
+                              <field name="ATTRIBUTE">textContent</field>
+                              <field name="PARENT">FALSE</field>
+                              <value name="VALUE">
+                                <shadow type="text" id="eP]U_bQM*;,}?jd*}KT1">
+                                  <field name="TEXT">UpdateAnimation</field>
+                                </shadow>
+                              </value>
+                              <value name="ID">
+                                <shadow type="text" id="AQT$R+8R/D|4}EbkrWsS">
+                                  <field name="TEXT">btn2</field>
+                                </shadow>
+                              </value>
+                            </block>
+                          </next>
+                        </block>
+                      </next>
                     </block>
-                  </value>
-                  <value name="SPEED">
-                    <shadow type="math_number" id="SJrqYOG=*L%_*eUN7O?G">
-                      <field name="NUM">1</field>
-                    </shadow>
-                    <block type="variables_get" id="J]D84V}(zCq|jrf]q;qI">
-                      <field name="VAR" id="GM#AVhIkxaTe3k3qV=hf">animSpeed</field>
-                    </block>
-                  </value>
+                  </statement>
                 </block>
               </next>
             </block>
@@ -360,7 +323,7 @@
         </block>
       </statement>
     </block>
-    <block xmlns="https://developers.google.com/blockly/xml" type="variables_set" id="*SXHdp[(B{I5p%X,E#n(" x="830" y="690">
+    <block xmlns="https://developers.google.com/blockly/xml" type="variables_set" id="*SXHdp[(B{I5p%X,E#n(" x="830" y="610">
       <field name="VAR" id=".:mvsOpbqA_(SOra?n1a">particles</field>
       <value name="VALUE">
         <block type="getObjectsFrom" id="U![pJ-5oM8e+]tdzC0}6">
@@ -373,7 +336,7 @@
         </block>
       </value>
     </block>
-    <block xmlns="https://developers.google.com/blockly/xml" type="variables_set" id="*/]g~/aJ]ny{fRh+84;K" x="830" y="770">
+    <block xmlns="https://developers.google.com/blockly/xml" type="variables_set" id="*/]g~/aJ]ny{fRh+84;K" x="830" y="690">
       <field name="VAR" id="GM#AVhIkxaTe3k3qV=hf">animSpeed</field>
       <value name="VALUE">
         <block type="math_number" id="{H2Dx,u)l!AnCO|ZJr?N">
@@ -413,6 +376,36 @@
           </value>
         </block>
       </next>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="eventHTMLElem" id=",.88+Hh@GposIe$0^,$U" x="830" y="790">
+      <field name="EVENT">click</field>
+      <field name="PARENT">FALSE</field>
+      <value name="ID">
+        <shadow type="text" id="r-Zxl2GGc!$$~*px]:mE">
+          <field name="TEXT">btn2</field>
+        </shadow>
+      </value>
+      <statement name="DO">
+        <block type="setAnimationSpeed" id="t7-|=I0S6d9o6`o^CjL6">
+          <field name="REVERSED">FALSE</field>
+          <value name="VALUE">
+            <shadow type="animationList" id="BcN?$BQ2r$1LI|x,ygSB">
+              <field name="FIELDNAME">&lt;none&gt;</field>
+            </shadow>
+            <block type="variables_get" id="@Q=JSPtyy{O8G#e`.74}">
+              <field name="VAR" id=".:mvsOpbqA_(SOra?n1a">particles</field>
+            </block>
+          </value>
+          <value name="SPEED">
+            <shadow type="math_number" id="SJrqYOG=*L%_*eUN7O?G">
+              <field name="NUM">1</field>
+            </shadow>
+            <block type="variables_get" id="J]D84V}(zCq|jrf]q;qI">
+              <field name="VAR" id="GM#AVhIkxaTe3k3qV=hf">animSpeed</field>
+            </block>
+          </value>
+        </block>
+      </statement>
     </block>
     <block xmlns="https://developers.google.com/blockly/xml" type="connectorSlot" id="o_@nUmY:vYEBJ[^cYLt:" x="10" y="930">
       <statement name="DO">
@@ -672,5 +665,5 @@
       </statement>
     </block>
   </tab>
-  <editorsettings viewport-x="1706.8004150390625" viewport-y="39.79999542236328" viewport-w="997.391" viewport-h="847.062" viewport-hidden="false" toolbox-library-mode="false" toolbox-minimized-mode="false"></editorsettings>
+  <editorsettings viewport-x="1956.8004150390625" viewport-y="212.79999542236328" viewport-w="997.406" viewport-h="862.078" viewport-hidden="false" toolbox-library-mode="false" toolbox-minimized-mode="false"></editorsettings>
 </xml>

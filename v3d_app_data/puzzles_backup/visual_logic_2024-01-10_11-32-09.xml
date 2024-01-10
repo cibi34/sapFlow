@@ -9,7 +9,7 @@
       <field name="FADE_ANNOTATIONS">TRUE</field>
     </block>
   </tab>
-  <tab name="main" type="CommonTab" active="true" scrollx="49.47972106933594" scrolly="-106.31481170654297" scale="1">
+  <tab name="main" type="CommonTab" active="true" scrollx="49.47972106933594" scrolly="-106.31481170654308" scale="1">
     <variables xmlns="https://developers.google.com/blockly/xml">
       <variable id=".:mvsOpbqA_(SOra?n1a">particles</variable>
       <variable id="GM#AVhIkxaTe3k3qV=hf">animSpeed</variable>
@@ -297,6 +297,59 @@
                   </next>
                 </block>
               </statement>
+              <next>
+                <block type="connectorSlot" id="u0F+S`7c?G:sl#bdktwG">
+                  <statement name="DO">
+                    <block type="addHTMLElement" id="V2(wl/pW-fJU_zw{]fg+">
+                      <field name="ELEMENT">button</field>
+                      <field name="MODE">TO</field>
+                      <field name="PARENT">FALSE</field>
+                      <value name="ID">
+                        <shadow type="text" id="wt{u)D+sM%q,75Frbpa-">
+                          <field name="TEXT">btn2</field>
+                        </shadow>
+                      </value>
+                      <value name="TARGET_ID">
+                        <shadow type="DOMObjectSelector" id="Ai|AJ5%:P,3URR[`4Hl(">
+                          <field name="DOM_OBJECT">CONTAINER</field>
+                        </shadow>
+                      </value>
+                      <next>
+                        <block type="setHTMLElemAttribute" id="-Fv^Kr4k7kScgN|bdR-Z">
+                          <field name="ATTRIBUTE">className</field>
+                          <field name="PARENT">FALSE</field>
+                          <value name="VALUE">
+                            <shadow type="text" id="IAi;l,Fd7i%IT]wE%!Z%">
+                              <field name="TEXT">button</field>
+                            </shadow>
+                          </value>
+                          <value name="ID">
+                            <shadow type="text" id="/L2XEfFpBVS#2-6-GjrN">
+                              <field name="TEXT">btn2</field>
+                            </shadow>
+                          </value>
+                          <next>
+                            <block type="setHTMLElemAttribute" id="1}mmN)Vmr:JXij?T$.e/">
+                              <field name="ATTRIBUTE">textContent</field>
+                              <field name="PARENT">FALSE</field>
+                              <value name="VALUE">
+                                <shadow type="text" id="eP]U_bQM*;,}?jd*}KT1">
+                                  <field name="TEXT">UpdateAnimation</field>
+                                </shadow>
+                              </value>
+                              <value name="ID">
+                                <shadow type="text" id="AQT$R+8R/D|4}EbkrWsS">
+                                  <field name="TEXT">btn2</field>
+                                </shadow>
+                              </value>
+                            </block>
+                          </next>
+                        </block>
+                      </next>
+                    </block>
+                  </statement>
+                </block>
+              </next>
             </block>
           </next>
         </block>
@@ -359,6 +412,9 @@
           </next>
         </block>
       </statement>
+    </block>
+    <block xmlns="https://developers.google.com/blockly/xml" type="math_number" id="m~FyTS^/[#VZJc+8`yz," x="1066" y="557">
+      <field name="NUM">1</field>
     </block>
     <block xmlns="https://developers.google.com/blockly/xml" type="variables_set" id="*SXHdp[(B{I5p%X,E#n(" x="830" y="690">
       <field name="VAR" id=".:mvsOpbqA_(SOra?n1a">particles</field>
@@ -672,5 +728,5 @@
       </statement>
     </block>
   </tab>
-  <editorsettings viewport-x="1706.8004150390625" viewport-y="39.79999542236328" viewport-w="997.391" viewport-h="847.062" viewport-hidden="false" toolbox-library-mode="false" toolbox-minimized-mode="false"></editorsettings>
+  <editorsettings viewport-x="1956.8004150390625" viewport-y="212.79999542236328" viewport-w="997.406" viewport-h="862.078" viewport-hidden="false" toolbox-library-mode="false" toolbox-minimized-mode="false"></editorsettings>
 </xml>
